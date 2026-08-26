@@ -1,0 +1,36 @@
+@charset "UTF-8";
+body {
+    background-image: linear-gradient(to bottom, green, rgba(251, 3, 44, 0.865));
+    
+}
+
+main {
+    background-color: aqua;
+     width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 20px black;
+}
+
+h1 {
+    color: rgb(63, 8, 244);
+    font-family:'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+h2 {
+    color: rgb(1, 45, 8);
+}
+
+p {
+    text-indent: 30px;
+}
+
+#principal {
+    color: rgb(250, 33, 26);
+    text-align: center;
+}
+h1, h2 {
+    text-decoration: underline;
+}

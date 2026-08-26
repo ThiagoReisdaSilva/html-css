@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body {
+background-color: rgb(233, 249, 247);
+font-family: 'Times New Roman', Times, serif;
+margin: auto;
+width: 1000px;
+padding: 200px;
+text-align: center;
+
+}
+form {
+    background-color: rgb(185, 253, 253);
+    border: 2px solid;
+    border-radius: 8px;
+}
+section {
+    background-color: rgb(168, 244, 210);
+     border: 2px solid;
+    border-radius: 8px;
+}
+header {
+    background-color: rgb(77, 249, 192);
+     border: 2px solid;
+    border-radius: 8px;
+}
+thead,tbody {
+    padding: 50px;
+    
+}
