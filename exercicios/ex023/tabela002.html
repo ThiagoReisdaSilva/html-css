@@ -10,30 +10,53 @@
             font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
             width: 500px;
+            position: relative;
         }
 
+        tbody > tr:nth-child(even) {
+            background-color: rgb(250, 98, 98);
+        }
+
+        tbody >tr:nth-child(odd) {
+            background-color: aqua;
+        }
+
+        thead >tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(83, 82, 82);
+        }
         td, th {
             border: 2px solid black;
             padding: 10px;
         }
         thead, tfoot {
-            background-color:gray;
+            background-color:rgb(83, 82, 82);
             color: white;
         }
 
         .num {
             text-align: right;
         }
+
+        caption {
+            background-color: lightgray;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de Tbabelas Grandes</h1>
-     <table>
-        <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
-            </tr>
+        <table>
+            <caption>População das Cidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
+                 </tr>
         </thead>
         <tbody>
             <tr>
@@ -125,10 +148,25 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong> </td>
             </tr>
         </tfoot>
      </table>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima aliquam impedit necessitatibus maxime saepe laboriosam nisi repellat. At animi soluta beatae praesentium iure cupiditate. Amet error inventore dolor rem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis voluptatibus, commodi error magni illo consequuntur atque veniam autem, dolore dolor provident assumenda praesentium nisi fuga recusandae non, iusto voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi neque obcaecati quisquam ipsam! Eveniet quae aliquam, dolores inventore consequuntur perferendis deleniti. Eum corporis ullam eius hic mollitia libero tenetur!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima aliquam impedit necessitatibus maxime saepe laboriosam nisi repellat. At animi soluta beatae praesentium iure cupiditate. Amet error inventore dolor rem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis voluptatibus, commodi error magni illo consequuntur atque veniam autem, dolore dolor provident assumenda praesentium nisi fuga recusandae non, iusto voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi neque obcaecati quisquam ipsam! Eveniet quae aliquam, dolores inventore consequuntur perferendis deleniti. Eum corporis ullam eius hic mollitia libero tenetur!
+
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima aliquam impedit necessitatibus maxime saepe laboriosam nisi repellat. At animi soluta beatae praesentium iure cupiditate. Amet error inventore dolor rem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis voluptatibus, commodi error magni illo consequuntur atque veniam autem, dolore dolor provident assumenda praesentium nisi fuga recusandae non, iusto voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi neque obcaecati quisquam ipsam! Eveniet quae aliquam, dolores inventore consequuntur perferendis deleniti. Eum corporis ullam eius hic mollitia libero tenetur!
+
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima aliquam impedit necessitatibus maxime saepe laboriosam nisi repellat. At animi soluta beatae praesentium iure cupiditate. Amet error inventore dolor rem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis voluptatibus, commodi error magni illo consequuntur atque veniam autem, dolore dolor provident assumenda praesentium nisi fuga recusandae non, iusto voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi neque obcaecati quisquam ipsam! Eveniet quae aliquam, dolores inventore consequuntur perferendis deleniti. Eum corporis ullam eius hic mollitia libero tenetur!
+
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima aliquam impedit necessitatibus maxime saepe laboriosam nisi repellat. At animi soluta beatae praesentium iure cupiditate. Amet error inventore dolor rem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis voluptatibus, commodi error magni illo consequuntur atque veniam autem, dolore dolor provident assumenda praesentium nisi fuga recusandae non, iusto voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi neque obcaecati quisquam ipsam! Eveniet quae aliquam, dolores inventore consequuntur perferendis deleniti. Eum corporis ullam eius hic mollitia libero tenetur!
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima aliquam impedit necessitatibus maxime saepe laboriosam nisi repellat. At animi soluta beatae praesentium iure cupiditate. Amet error inventore dolor rem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis voluptatibus, commodi error magni illo consequuntur atque veniam autem, dolore dolor provident assumenda praesentium nisi fuga recusandae non, iusto voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi neque obcaecati quisquam ipsam! Eveniet quae aliquam, dolores inventore consequuntur perferendis deleniti. Eum corporis ullam eius hic mollitia libero tenetur!
+
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima aliquam impedit necessitatibus maxime saepe laboriosam nisi repellat. At animi soluta beatae praesentium iure cupiditate. Amet error inventore dolor rem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis voluptatibus, commodi error magni illo consequuntur atque veniam autem, dolore dolor provident assumenda praesentium nisi fuga recusandae non, iusto voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi neque obcaecati quisquam ipsam! Eveniet quae aliquam, dolores inventore consequuntur perferendis deleniti. Eum corporis ullam eius hic mollitia libero tenetur!
+
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima aliquam impedit necessitatibus maxime saepe laboriosam nisi repellat. At animi soluta beatae praesentium iure cupiditate. Amet error inventore dolor rem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis voluptatibus, commodi error magni illo consequuntur atque veniam autem, dolore dolor provident assumenda praesentium nisi fuga recusandae non, iusto voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi neque obcaecati quisquam ipsam! Eveniet quae aliquam, dolores inventore consequuntur perferendis deleniti. Eum corporis ullam eius hic mollitia libero tenetur!
 </body>
 </html>
