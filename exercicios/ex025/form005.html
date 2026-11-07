@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários com sexo e esportes</title>
+</head>
+<body>
+    <form action="formulario.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M">
+            <label for="isxmas">Masculino</label> <br>
+
+            <input type="radio" name="sexo" id="isxfem" value="F" checked>
+            <label for="isxfem">Feminino</label >
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="fut" id="ifut" checked><label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="bas" id="ibas" checked><label for="ibas">Basquete</label><br>
+            <input type="checkbox" name="nat" id="inat"><label for="inat">Natação</label><br>
+            <input type="checkbox" name="ten" id="iten"><label for="iten">Tenis</label><br>
+            <input type="checkbox" name="vol" id="ivol"><label for="ivol">Vôlei</label><br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+<!--
+<fieldset> cria a borda em volta do assunto do formulário
+
+<legend> é o que fica na borda do fieldset
+
+em (input tipo radio), é necessário ser o mesmo nome= para que escolha apenas uma opção, ao invés de marcar várias. sem isso, após marcar todas, nao dá para desmacar.
+
+no <label>, o campo for= é para colocar o mesmo do id= do input para liga-los.
+
+checked serve para o formulário ja vir marcado alguma opção.
+
+dica para pôr as opções uma embaixo da outra, use a tag <br> para quebra de linha.
+
+
+
+
+-->
