@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulários</h1>
+    <form action="formulario.php" method="post"></form>
+    <fieldset>
+        <legend>Cor-sugestão de qualidade-File</legend>
+
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="Cor" id="icor" value="#31#255#229">
+        </p>
+
+        <p>
+            <label for="isat">Nível de satisfação:</label>
+            <input type="range" name="sat" id="isat" min="2" max="17" value="15">
+        </p>
+
+        <p>
+            <label for="">Mande seu aquivo</label>
+            <input type="file" src="" alt="">
+        </p>
+
+    </fieldset>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+</body>
+</html>
