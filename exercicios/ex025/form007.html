@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Aprendendo um pouco mais de Formulários</h1>
+        <form action="for.php " autocomplete="on">
+<fieldset>
+    <legend>Escolhas</legend>
+    <p>
+        <label for="iest">Escolha seu Estado:</label>
+        <select name="Est" id="iest">
+            <optgroup label="Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PB">Paraíba</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+
+            <optgroup label="Suldeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ" selected>Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <p>
+        <label for="ipro">Qual a sua Profissão:</label>
+        <input type="text" name="pro" id="ipro" list="profi">
+        <datalist id="profi">
+            <option >Professor</option>
+            <option >Médico</option>
+            <option >Cozinheiro</option>
+            <option >Dentista</option>
+
+        </datalist>
+    </p>
+
+    <p>
+        <label for="msg">Deixe sua msg</label><br>
+        <textarea name="msg" id="msg"></textarea>
+    </p>
+</fieldset>
+
+<p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</p>
+        </form>
+</body>
+</html>
+
+<!--
+tag select  e dentro de select tag option para exibir opções. como estados do Brasil popr exemplo.
+se quiser dividir as opções tem também o optgroup, 
+
+para caixa com opções tem também o input text e dentro , list. fora datalist e fora, option. obs. list e datalist com mesmo nome.
+
+se quiser algo ja pré selecionado, só coloar na opção selected.
+
+-->
